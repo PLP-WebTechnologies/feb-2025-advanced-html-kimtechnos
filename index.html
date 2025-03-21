@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 Advanced Html Assignment</title>
+
+    <style>
+      /*table styling */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Ordered List with Roman Numerals-->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ol>
+    <!--External image from pexels-->
+    <h2>External pexel Image</h2>
+    <img
+      src="https://images.pexels.com/photos/1181703/pexels-photo-1181703.jpeg"
+      alt="Sample Image"
+      width="400"
+    />
+    <!--Table with 5 contacts-->
+    <h2>Contact List</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Francis Kimani</td>
+        <td>muranga kenya</td>
+        <td>+25486983240</td>
+        <td>fkimani@gmail.com</td>
+      </tr>
+      <tr>
+        <td>John Ndoe</td>
+        <td>Nairobi kenya</td>
+        <td>+25478695424</td>
+        <td>ndoe@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Khalif Latif</td>
+        <td>muranga kenya</td>
+        <td>+25476798624</td>
+        <td>khalif@gmail.com</td>
+      </tr>
+      <tr>
+        <td>David white</td>
+        <td>Mombasa kenya</td>
+        <td>+25470998624</td>
+        <td>david@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Hellana Joice</td>
+        <td>Malindi kenya</td>
+        <td>+25472698624</td>
+        <td>hellena@gmail.com</td>
+      </tr>
+    </table>
+    <!--Registration Form-->
+    <h2>Registration Form</h2>
+    <form action="">
+      <!--Name input field-->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <!--Email input field-->
+      <br /><br />
+      <label for="email">Email:</label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <!--Password input field-->
+      <br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+        required
+      />
+      <!-- Date of birth input field -->
+      <br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br /><br />
+      <!--Gender Selection using redio buttons-->
+      <label>Gender</label>
+      <input type="radio" name="gender" value="male" required />Male
+      <input type="radio" name="gender" value="female" required />Female
+      <br /><br />
+      <!--Intrests selection using checkboxes-->
+      <label>Intrests:</label>
+      <input type="checkbox" name="intrests" value="coding" />Conding
+      <input type="checkbox" name="intrests" value="design" />design
+      <input type="checkbox" name="intrests" value="gaming" />Gaming
+      <br /><br />
+      <!--Country selection using dop down menu-->
+      <label for="country">Country</label>
+      <select name="country" id="country" required>
+        <option value="">Select a Country</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select>
+      <br /><br />
+      <!--Submit button for the form-->
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
